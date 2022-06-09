@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+		<title>Nation Navigate</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<nav class="navbar" id="navbar">
+				<h1 class="logo">Where in the world?</h1>
+				<p class="app-theme"><i class="fa-regular fa-moon"></i> Dark Mode</p>
+			</nav>
+			<main>
+				<div id="all-countries">
+					<div class="search-filter-area">
+						<div>
+							<input
+								type="text"
+								name="search-filter"
+								placeholder="Search for a country..."
+								id="search-bar"
+								class="search-bar"
+							/>
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+						<select
+							name="search-filter"
+							id="filter-bar"
+							class="filter-bar"
+							value="Filter by Region"
+							onchange="filterRegion(this.value)"
+						>
+							<option value="Filter by Region">Filter by Region</option>
+							<option value="Africa">Africa</option>
+							<option value="America">America</option>
+							<option value="Asia">Asia</option>
+							<option value="Europe">Europe</option>
+							<option value="Oceania">Oceania</option>
+						</select>
+					</div>
+					<section class="countries" id="countries"><strong>Loading...</strong></section>
+				</div>
+				<div id="single-country">
+					<button id="back-btn" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+					<div class="country-page">
+						<img src="https://flagcdn.com/it.svg" alt="Flag" />
+						<div class="about">
+							<div class="infos">
+								<article class="main-info">
+									<h1><span class="bold-info">Belgium</span></h1>
+									<p><span class="bold-info">Native Name:</span> Belgie</p>
+									<p><span class="bold-info">Population:</span> 11,319,511</p>
+									<p><span class="bold-info">Region:</span> Europe</p>
+									<p><span class="bold-info">Sub Region:</span> Western Europe</p>
+									<p><span class="bold-info">Capital:</span> Brussels</p>
+								</article>
+
+								<article class="other-info">
+									<p class="not-capitalize"><span class="bold-info">Top Level Domain: </span>.be</p>
+									<p><span class="bold-info">Currencies: </span>Euro</p>
+									<p><span class="bold-info">Languages: </span>Dutch, Friend, German</p>
+								</article>
+							</div>
+
+							<article class="border-countries">
+								<p class="bold-info">Border Countries:</p>
+								<div class="btns">
+									<button>France</button>
+									<button>Germany</button>
+									<button>Netherlands</button>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="./js/theme.js"></script>
+		<script src="./js/filter.js"></script>
+		<script src="./js/route.js"></script>
+		<script src="./js/fetchAll.js"></script>
+		<script src="./js/search.js"></script>
+	</body>
+</html>

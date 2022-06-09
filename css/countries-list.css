@@ -1,0 +1,62 @@
+@import url('./main.css');
+
+.countries {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 30px;
+	padding-bottom: 30px;
+}
+
+.countries strong {
+	width: 100%;
+	font-size: calc(5vw + 2rem);
+	font-weight: var(--fw-8);
+	color: var(--white);
+	text-align: center;
+	text-shadow: 5px 5px 5px var(--deep-blue);
+	user-select: none;
+}
+
+.countries .country {
+	width: 300px;
+	border-radius: 7px;
+	background: var(--white);
+	display: inline-block;
+	margin: 0 auto;
+	box-shadow: 0 0 3px var(--gray);
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.country .flag {
+	width: 100%;
+}
+
+.country .flag img {
+	width: 100%;
+	border-bottom: 1px solid var(--gray);
+}
+
+.country .details {
+	width: 100%;
+	padding: 0 20px 40px 20px;
+}
+
+.country .details h2 {
+	font-size: calc(0.5vw + 1rem);
+	font-weight: var(--fw-8);
+	margin-block: 20px;
+	text-transform: capitalize;
+}
+
+.country .details p {
+	font-size: calc(0.5vw + 0.8rem);
+	line-height: 25px;
+	text-transform: capitalize;
+}
+
+.country .details p span {
+	font-weight: var(--fw-6);
+}

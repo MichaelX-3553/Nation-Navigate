@@ -1,0 +1,26 @@
+@import url('./main.css');
+
+.navbar {
+	width: 100%;
+	padding: 25px 5vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 0px 10px var(--gray);
+	position: sticky;
+	top: 0;
+	left: 0;
+	background: var(--white);
+	z-index: 1000;
+}
+
+.navbar .logo {
+	font-size: calc(0.5vw + 1rem);
+	font-weight: var(--fw-8);
+}
+
+.navbar .app-theme {
+	font-size: calc(0.5vw + 0.8rem);
+	font-weight: var(--fw-6);
+	cursor: pointer;
+}

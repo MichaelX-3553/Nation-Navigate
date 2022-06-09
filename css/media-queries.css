@@ -1,0 +1,70 @@
+@import url('./main.css');
+
+@media (min-width: 850px) {
+	main div button {
+		min-width: 150px !important;
+	}
+
+	.country-page {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.country-page img {
+		width: 450px;
+		display: inline-block;
+		justify-self: left;
+	}
+
+	.country-page .about {
+		width: max-content;
+	}
+
+	.about .infos {
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	.infos .main-info {
+		width: 100%;
+	}
+
+	.infos .other-info {
+		width: 100%;
+		margin-bottom: unset;
+	}
+
+	.main-info h1 {
+		font-size: calc(1vw + 1rem);
+		margin-bottom: 10px;
+	}
+
+	.bold-info {
+		line-height: 30px !important;
+	}
+}
+
+@media (max-width: 1100px) {
+	.country-page {
+		flex-direction: column;
+		justify-content: center;
+		gap: 100px;
+	}
+	.country-page img {
+		width: 100%;
+	}
+
+	.country-page .about {
+		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.border-countries .btns {
+		flex-direction: column;
+		align-items: center;
+	}
+}

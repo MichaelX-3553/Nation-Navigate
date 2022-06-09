@@ -1,0 +1,66 @@
+@import url('./main.css');
+
+main div button {
+	font-weight: 300 !important;
+	margin-bottom: 60px !important;
+}
+
+.country-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+
+.country-page img {
+	width: 100%;
+	display: inline-block;
+}
+
+.country-page .about {
+	width: 100%;
+}
+
+.about .infos {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 50px;
+	margin-bottom: 50px;
+}
+
+.infos .main-info {
+	width: 100%;
+}
+
+.infos .other-info {
+	margin-bottom: -30px;
+}
+
+.main-info h1 {
+	font-size: calc(1vw + 1.3rem);
+	font-weight: var(--fw-8);
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+.main-info p:not(.not-capitalize) {
+	text-transform: capitalize;
+}
+
+.border-countries {
+	width: 100%;
+	margin-bottom: -50px;
+}
+
+.border-countries .btns {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	column-gap: 10px;
+}

@@ -1,0 +1,93 @@
+/* importing the otherr css files */
+@import url('./navbar.css');
+@import url('./search-filter.css');
+@import url('./countries-list.css');
+@import url('./country-page.css');
+@import url('./media-queries.css');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* colors */
+	--dark-blue: #2b3945;
+	--very-dark-blue: #202c37;
+	--deep-blue: #111517;
+	--gray: #858585;
+	--pale-gray: #fafafa;
+	--white: #ffffff;
+
+	/* typography */
+	--ff-general: 'Nunito Sans', sans-serif;
+	--fw-3: 300;
+	--fw-6: 600;
+	--fw-8: 800;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--pale-gray);
+	color: var(--deep-blue);
+}
+
+body * {
+	font-family: var(--ff-general);
+}
+
+body img {
+	user-select: none;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.container main {
+	width: 100%;
+	padding: 40px 5vw;
+}
+
+.main div {
+	width: 100%;
+}
+
+button {
+	align-self: flex-start;
+	min-width: 30%;
+	width: max-content;
+	padding-inline: 15px;
+	height: 20px;
+	background: var(--pale-gray);
+	border: none;
+	height: 30px;
+	display: inline-block;
+	margin-bottom: 50px;
+	color: var(--deep-blue);
+	box-shadow: 0 0 5px var(--gray);
+	font-weight: var(--fw-6);
+	word-spacing: 5px;
+	cursor: pointer;
+}
+
+.bold-info {
+	line-height: 35px;
+	font-weight: var(--fw-6);
+	text-transform: capitalize;
+}
+
+#single-country {
+	display: none;
+}
