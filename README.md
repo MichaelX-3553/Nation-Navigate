@@ -29,8 +29,8 @@ Users can:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/MichaelX-3553/Nation-Navigate)
+- Live Site URL: [Live Site](https://nation-navigate-michaelx.netlify.app/)
 
 ### Built with
 
@@ -46,8 +46,8 @@ Working with Api's
 
 ### Useful resources
 
-- [Example resource 1](https://fonts.google.com) - This helped me get the font I used for this project.
-- [Example resource 2](https://www.fontawesome.com) - This is an amazing site which helped me get all the icons I used for this project.
+- [Google Fonts](https://fonts.google.com) - This helped me get the font I used for this project.
+- [Fontawesome](https://www.fontawesome.com) - This is an amazing site which helped me get all the icons I used for this project.
 
 ## Author
 
