@@ -42,7 +42,6 @@ const fetchData = (url) => {
 
 					let countryDiv = document.createElement('div');
 					countryDiv.classList.add('country');
-					countryDiv.id = name;
 
 					let countryData = `
             <div class="flag">
@@ -100,7 +99,6 @@ const fetchFiltered = (url) => {
 
 					let countryDiv = document.createElement('div');
 					countryDiv.classList.add('country');
-					countryDiv.id = name;
 					let countryData = `
 		<div class="flag">
 			<img src="${flag}" alt="${name} Flag" />
